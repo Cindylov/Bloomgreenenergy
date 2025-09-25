@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #32C36C;
+    --primary: #D4AF37;
     --light: #F6F7F8;
     --dark: #1A2A36;
 }
@@ -47,9 +47,11 @@
     transition: .5s;
 }
 
-.btn.btn-primary,
-.btn.btn-outline-primary:hover {
+.btn.btn-primary, .btn.btn-outline-primary:hover{
     color: #FFFFFF;
+}
+.btn.btn-primary:hover {
+    color: #000000;
 }
 
 .btn-square {
@@ -144,6 +146,19 @@
 
 
 /*** Header ***/
+/* Desktop & default */
+.header-carousel .owl-carousel-item {
+  position: relative;
+  height: 650px; /* set consistent height */
+}
+
+.header-carousel .owl-carousel-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image scales without distortion */
+}
+
 .owl-carousel-inner {
     position: absolute;
     width: 100%;
@@ -212,7 +227,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/How-Lithium-Battery-for-Solar-Systems-Transforms-Energy-Use.webp) center center no-repeat;
     background-size: cover;
 }
 
@@ -363,6 +378,28 @@
     transition-delay: .3s;
 }
 
+.portfolio-img img {
+    width: 100%;              
+    height: 250px;            
+    object-fit: cover;        
+    display: block;          
+}
+
+/* pay small-small */
+  .card {
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  .icon i {
+    transition: transform 0.3s ease;
+  }
+  .icon i:hover {
+    transform: scale(1.15);
+  }
 
 /*** Quote ***/
 @media (min-width: 992px) {
